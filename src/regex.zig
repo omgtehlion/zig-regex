@@ -102,7 +102,7 @@ pub const Captures = struct {
         };
     }
 
-    pub fn deinit(self: *Self) void {
+    pub fn deinit(self: *const Self) void {
         self.allocator.free(self.slots);
     }
 
